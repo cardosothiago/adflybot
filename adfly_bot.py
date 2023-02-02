@@ -8,7 +8,7 @@ while True:
     options = Options()
     options.add_argument("--headless")
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome("/usr/bin/chromedriver", options=options)
     driver.get_cookies()
     try:
         print('Abrindo página...')
